@@ -1,3 +1,0 @@
-C:/Users/Pawel/Desktop/clion_projects/text_game/cmake-build-debug/CMakeFiles/text_game.dir
-C:/Users/Pawel/Desktop/clion_projects/text_game/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Pawel/Desktop/clion_projects/text_game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
