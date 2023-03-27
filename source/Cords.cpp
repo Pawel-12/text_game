@@ -42,3 +42,8 @@ bool Cords::operator==(const Cords & b) const
     return x == b.x && y == b.y;
 }
 
+std::ostream & operator<<(std::ostream & os, const Cords & c)
+{
+    os<<"["<<c[0]<<","<<c[1]<<"]";
+    return os;
+}

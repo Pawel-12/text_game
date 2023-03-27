@@ -38,4 +38,8 @@ const std::unordered_map<CommandName, bool (*)(World &)> cmd
 };
 
 
+// true when command found
+bool find(const std::vector<CommandName> & commands, const CommandName & input);
 
+// true when one of objects contains command
+bool IsValidCmd(const CommandName & input, const Room & room, const Player & player);

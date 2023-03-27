@@ -12,6 +12,7 @@ public:
     int & operator[](const int & index);
     const int & operator[](const int & index)const;
     bool operator==(const Cords & b) const;
+    friend std::ostream & operator<<(std::ostream & os, const Cords & c);
 };
 
 struct CordsHasher {

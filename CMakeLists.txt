@@ -13,4 +13,6 @@ add_executable(text_game ${SOURCES})
 
 set_target_properties(text_game PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_LIST_DIR}/bin")
 
+add_subdirectory(google_test)
+
 

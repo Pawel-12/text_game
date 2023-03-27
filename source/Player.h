@@ -21,9 +21,4 @@ public:
         position = {position[0] + x, position[1] + y};
     }
 
-
-
 };
-
-
-
