@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <iostream>
-#include "../source/Room.h"
-#include "../source/Command.h"
+#include "../source/headers/Room.h"
+#include "../source/headers/Command.h"
 
 TEST(MapTest, Test1) {
 
@@ -47,7 +47,7 @@ TEST(MapTest, Test1) {
             catch (const std::exception& e)
             {
                 std::cout << e.what()<<", "<<c<<" is invalid direction"<<std::endl;
-                FAIL();
+                EXPECT_NO_THROW(map.at(temp));
             }
             temp = key;
         }

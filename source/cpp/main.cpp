@@ -1,23 +1,11 @@
-#include <iostream>
-#include <unordered_map>
-
-#include "Room.h"
-#include "Player.h"
-#include "Command.h"
-#include "Cords.h"
-
-void getInput(CommandName & input)
-{
-    std::cout << "<Player> ";
-    std::cin >> input;
-    std::transform(input.begin(), input.end(), input.begin(), ::toupper);
-}
+#include "main.h"
 
 int main() {
 
+    std::unique_ptr<MapContainer> loaded_map {LoadMapFile()};
     Player player{{0, 0}};
 
-    std::unordered_map<Cords, Room, CordsHasher> map
+    MapContainer map
     {
         {{0,0},{"City", "small town", {"N","E","S","W"},{"SHOP"}}},
         {{0,1},{"Forest", "lot of trees", {"S"}}},
